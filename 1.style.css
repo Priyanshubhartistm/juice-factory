@@ -1,0 +1,302 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .top-header {
+      background: #013d4d;
+      color: #fff;
+      
+      padding: 5px 10px;
+      font-size: 20px;
+
+    }
+    
+
+    .scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #004d4d;
+  color: white;
+  padding: 8px 0;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 40s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+    header {
+      background: #288a94;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .hero {
+      text-align: center;
+      background: white;
+    }
+.hero {
+  background-image: url('https://i.pinimg.com/736x/0f/21/d1/0f21d17681a975fe2905d05617a69518.jpg'); /* Replace with your fruit image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+}
+
+
+    .hero h1 {
+      font-size: 80px;
+      color: #178697;
+      font-family: 'Anton', sans-serif;
+      margin: 0;
+    }
+    .hero h2 {
+      font-size: 90px;
+      color: #71b109;
+      margin: 0;
+    }
+    .hero h3 {
+      font-size: 60px;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      font-family: 'Anton', sans-serif;
+
+    }
+
+    .hero p {
+     max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+      }
+
+
+      .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #f5f5f5;
+      border-bottom: 2px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      padding: 12px 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      border-radius: 4px;
+      margin: 5px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    .section p {
+      font-size: 16px;
+      color: #555;
+    }
+
+      .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+.item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px dashed #cc0000;
+    }
+
+    .item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item .text h3 {
+      margin: 0;
+      color: #222;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .item .text p {
+      margin: 5px 0 0;
+      color: #444;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .item img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+      
+    
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: red;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #218693;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    } 
+  
+    .juice-footer {
+  background: #fff;
+  padding: 50px 30px;
+  font-family: sans-serif;
+  color: #333;
+  border-top: 4px solid #f2f2f2;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  flex: 1 1 300px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  color: teal;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-logo h4 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.social-icons i {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  flex: 3 1 700px;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  border-bottom: 2px solid #00a9b5;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cust-care-btn {
+  background: #00a9b5;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cust-care-btn i {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+  
